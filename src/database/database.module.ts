@@ -4,7 +4,7 @@ import { pgConfig } from '../orm.config';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(pgConfig), ConfigModule.forRoot()],
+  imports: [TypeOrmModule.forRootAsync(pgConfig), ConfigModule.forRoot()],
   exports: [TypeOrmModule],
 })
 export class DatabaseModule {}
