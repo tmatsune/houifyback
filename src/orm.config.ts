@@ -4,7 +4,7 @@ export const pgConfig: TypeOrmModuleOptions = {
   type: 'postgres',
   username: process.env.USERNAME,
   password: process.env.PASSWORD,
-  port: 5032,
+  port: 7138,
   host: process.env.HOST,
   database: process.env.DB,
   synchronize: true,
